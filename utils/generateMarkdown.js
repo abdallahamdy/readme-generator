@@ -10,7 +10,7 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
+// function takes in the data entered by user and returns the text to be written into the readme.md 
 function generateMarkdown(data) {
   const { projectName, description, installation, usage, contributing, test, username, email } = data;
   return `# ${projectName}
@@ -46,6 +46,7 @@ function generateMarkdown(data) {
 `;
 }
 
+// exports generateMarkdown function output 
 module.exports = data => {
   return generateMarkdown(data);
 };
